@@ -251,7 +251,7 @@ def lol(background, image, cords, size):
 
 
 def mem2(image):
-    pics = requests.get("https://0x0.st/ilq-.jpg" )
+    pics = requests.get("https://raw.githubusercontent.com/ggrnaaa/ftgm0du1es/master/%D0%BA%D0%B0%D1%80%D1%82%D0%B8%D0%BD%D0%BA%D0%B8/IMG_20200909_211148_531_1599676109708_1600536282728_1600537974812.jpg" )
     pics.raw.decode_content = True
     img = Image.open(io.BytesIO(pics.content)).convert("RGB")
     lol(img, image, (0, 0), 160)
@@ -294,7 +294,7 @@ def mem3(image):
     pics = requests.get("https://raw.githubusercontent.com/ggrnaaa/ftgm0du1es/master/%D0%BA%D0%B0%D1%80%D1%82%D0%B8%D0%BD%D0%BA%D0%B8/IMG_20200914_171454_1600180954381.jpg" )
     pics.raw.decode_content = True
     img = Image.open(io.BytesIO(pics.content)).convert("RGB")
-    lol(img, image, (1, 1), 580)
+    lol(img, image, (0, 0), 580)
 
     out = io.BytesIO()
     out.name = "outsider.png"
@@ -333,7 +333,7 @@ def mem4(image):
     pics = requests.get("https://raw.githubusercontent.com/ggrnaaa/ftgm0du1es/master/%D0%BA%D0%B0%D1%80%D1%82%D0%B8%D0%BD%D0%BA%D0%B8/IMG_20200917_171209_028.jpg" )
     pics.raw.decode_content = True
     img = Image.open(io.BytesIO(pics.content)).convert("RGB")
-    lol(img, image, (1, 1), 580)
+    lol(img, image, (0, 0), 580)
 
     out = io.BytesIO()
     out.name = "outsider.png"
@@ -373,7 +373,7 @@ def mem5(image):
     pics = requests.get("https://raw.githubusercontent.com/ggrnaaa/ftgm0du1es/master/%D0%BA%D0%B0%D1%80%D1%82%D0%B8%D0%BD%D0%BA%D0%B8/Screenshot_2020-09-16-11-30-32-328_com.btows.photo_1600245051259.jpg" )
     pics.raw.decode_content = True
     img = Image.open(io.BytesIO(pics.content)).convert("RGB")
-    lol(img, image, (105, 1), 440)
+    lol(img, image, (105, 0), 440)
 
     out = io.BytesIO()
     out.name = "outsider.png"
