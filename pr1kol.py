@@ -485,15 +485,15 @@ async def check_media7(message, reply):
 
 def lol(background, image, cords, size):
     overlay = Image.open(BytesIO(image))
-    overlay = overlay.resize((size * 2, size * 1))
+    overlay = overlay.resize((size * 3, size * 2))
     background.paste(overlay, cords)
 
 
 def mem8(image):
-    pics = requests.get("https://raw.githubusercontent.com/ggrnaaa/ftgm0du1es/master/%D0%BA%D0%B0%D1%80%D1%82%D0%B8%D0%BD%D0%BA%D0%B8/IMG_20200917_171328_932.jpg" )
+    pics = requests.get("https://raw.githubusercontent.com/ggrnaaa/ftgm0du1es/master/%D0%BA%D0%B0%D1%80%D1%82%D0%B8%D0%BD%D0%BA%D0%B8/IMG_20200917_171328_932_1600552631308.jpg" )
     pics.raw.decode_content = True
     img = Image.open(io.BytesIO(pics.content)).convert("RGB")
-    lol(img, image, (370, 558), 400)
+    lol(img, image, (370, 558), 200)
 
     out = io.BytesIO()
     out.name = "outsider.png"
