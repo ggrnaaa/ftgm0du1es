@@ -251,10 +251,10 @@ def lol(background, image, cords, size):
 
 
 def mem2(image):
-    pics = requests.get("https://raw.githubusercontent.com/ggrnaaa/ftgm0du1es/master/%D0%BA%D0%B0%D1%80%D1%82%D0%B8%D0%BD%D0%BA%D0%B8/IMG_20200917_171215_661.jpg" )
+    pics = requests.get("https://0x0.st/ilq-.jpg" )
     pics.raw.decode_content = True
     img = Image.open(io.BytesIO(pics.content)).convert("RGB")
-    lol(img, image, (1, 1), 650)
+    lol(img, image, (0, 0), 160)
 
     out = io.BytesIO()
     out.name = "outsider.png"
