@@ -46,6 +46,7 @@ class PrikolMod(loader.Module):
 
     async def ebcmd(self, message):
         """.eb и реплай на картинку.  муж ебет меня чето там"""
+        await message.delete()
         reply = await message.get_reply_message()
         if not reply:
             await message.edit("реплай на картиночку, пожалуйста")
@@ -60,6 +61,7 @@ class PrikolMod(loader.Module):
 
     async def intcmd(self, message):
         """.int и реплай на картинку. интересноо я один блаблаблабда"""
+        await message.delete()
         reply = await message.get_reply_message()
         if not reply:
             await message.edit("реплай на картиночку, пожалуйста")
@@ -74,6 +76,7 @@ class PrikolMod(loader.Module):
 
     async def smcmd(self, message):
         """.sm и реплай на картинку. смешные картинки в понедельник"""
+        await message.delete()
         reply = await message.get_reply_message()
         if not reply:
             await message.edit("реплай на картиночку, пожалуйста")
@@ -88,6 +91,7 @@ class PrikolMod(loader.Module):
             
     async def moskcmd(self, message):
         """.mosk и реплай на картинку. виноваты москали"""
+        await message.delete()
         reply = await message.get_reply_message()
         if not reply:
             await message.edit("реплай на картиночку, пожалуйста")
@@ -102,6 +106,7 @@ class PrikolMod(loader.Module):
 
     async def aktcmd(self, message):
         """.akt и реплай на картинку. убийца актер"""
+        await message.delete()
         reply = await message.get_reply_message()
         if not reply:
             await message.edit("реплай на картиночку, пожалуйста")
@@ -117,6 +122,7 @@ class PrikolMod(loader.Module):
 
     async def zpmcmd(self, message):
         """.zpm и реплай на картинку. запомните твари"""
+        await message.delete()
         reply = await message.get_reply_message()
         if not reply:
             await message.edit("реплай на картиночку, пожалуйста")
@@ -131,6 +137,7 @@ class PrikolMod(loader.Module):
             
     async def zbtcmd(self, message):
         """.zbt и реплай на картинку.  забудьте твари"""
+        await message.delete()
         reply = await message.get_reply_message()
         if not reply:
             await message.edit("реплай на картиночку, пожалуйста")
@@ -141,10 +148,10 @@ class PrikolMod(loader.Module):
                 return
             what = mem7(pic)
             await message.client.send_file(message.to_id, what)
-            
-            
+
     async def drcmd(self, message):
         """.dr и реплай на картинку. мне и одного друга достаточно, если он"""
+        await message.delete()
         reply = await message.get_reply_message()
         if not reply:
             await message.edit("реплай на картиночку, пожалуйста")
@@ -155,7 +162,7 @@ class PrikolMod(loader.Module):
                 return
             what = mem8(pic)
             await message.client.send_file(message.to_id, what)
-                        
+            
 def lol(background, image, cords, size):
     overlay = Image.open(BytesIO(image))
     overlay = overlay.resize((size * 2, size * 1))
@@ -203,10 +210,10 @@ def lol(background, image, cords, size):
 
 
 def mem1(image):
-    pics = requests.get("https://raw.githubusercontent.com/ggrnaaa/ftgm0du1es/master/%D0%BA%D0%B0%D1%80%D1%82%D0%B8%D0%BD%D0%BA%D0%B8/IMG_20200909_211148_531_1599676109708.jpg" )
+    pics = requests.get("https://github.com/LaciaMemeFrame/FTG-Modules/blob/master/mem1.jpg?raw=true" )
     pics.raw.decode_content = True
     img = Image.open(io.BytesIO(pics.content)).convert("RGB")
-    lol(img, image, (0, 0), 160)
+    lol(img, image, (1, 1), 160)
 
     out = io.BytesIO()
     out.name = "outsider.png"
@@ -243,10 +250,10 @@ def lol(background, image, cords, size):
 
 
 def mem2(image):
-    pics = requests.get("https://raw.githubusercontent.com/ggrnaaa/ftgm0du1es/master/%D0%BA%D0%B0%D1%80%D1%82%D0%B8%D0%BD%D0%BA%D0%B8/IMG_20200909_211148_531_1599676109708_1600536282728_1600537974812.jpg" )
+    pics = requests.get("https://github.com/LaciaMemeFrame/FTG-Modules/blob/master/mem2.jpg?raw=true" )
     pics.raw.decode_content = True
     img = Image.open(io.BytesIO(pics.content)).convert("RGB")
-    lol(img, image, (0, 0), 160)
+    lol(img, image, (1, 1), 650)
 
     out = io.BytesIO()
     out.name = "outsider.png"
@@ -283,10 +290,10 @@ def lol(background, image, cords, size):
 
 
 def mem3(image):
-    pics = requests.get("https://raw.githubusercontent.com/ggrnaaa/ftgm0du1es/master/%D0%BA%D0%B0%D1%80%D1%82%D0%B8%D0%BD%D0%BA%D0%B8/IMG_20200914_171454_1600180954381.jpg" )
+    pics = requests.get("https://github.com/LaciaMemeFrame/FTG-Modules/blob/master/mem3.jpg?raw=true" )
     pics.raw.decode_content = True
     img = Image.open(io.BytesIO(pics.content)).convert("RGB")
-    lol(img, image, (0, 0), 580)
+    lol(img, image, (1, 1), 580)
 
     out = io.BytesIO()
     out.name = "outsider.png"
@@ -322,10 +329,10 @@ def lol(background, image, cords, size):
 
 
 def mem4(image):
-    pics = requests.get("https://raw.githubusercontent.com/ggrnaaa/ftgm0du1es/master/%D0%BA%D0%B0%D1%80%D1%82%D0%B8%D0%BD%D0%BA%D0%B8/IMG_20200917_171209_028.jpg" )
+    pics = requests.get("https://github.com/LaciaMemeFrame/FTG-Modules/blob/master/mem4.jpg?raw=true" )
     pics.raw.decode_content = True
     img = Image.open(io.BytesIO(pics.content)).convert("RGB")
-    lol(img, image, (0, 0), 580)
+    lol(img, image, (1, 1), 580)
 
     out = io.BytesIO()
     out.name = "outsider.png"
@@ -362,10 +369,10 @@ def lol(background, image, cords, size):
 
 
 def mem5(image):
-    pics = requests.get("https://raw.githubusercontent.com/ggrnaaa/ftgm0du1es/master/%D0%BA%D0%B0%D1%80%D1%82%D0%B8%D0%BD%D0%BA%D0%B8/Screenshot_2020-09-16-11-30-32-328_com.btows.photo_1600245051259.jpg" )
+    pics = requests.get("https://github.com/LaciaMemeFrame/FTG-Modules/blob/master/mem5.jpg?raw=true" )
     pics.raw.decode_content = True
     img = Image.open(io.BytesIO(pics.content)).convert("RGB")
-    lol(img, image, (105, 0), 440)
+    lol(img, image, (105, 1), 440)
 
     out = io.BytesIO()
     out.name = "outsider.png"
@@ -402,7 +409,7 @@ def lol(background, image, cords, size):
 
 
 def mem6(image):
-    pics = requests.get("https://raw.githubusercontent.com/ggrnaaa/ftgm0du1es/master/%D0%BA%D0%B0%D1%80%D1%82%D0%B8%D0%BD%D0%BA%D0%B8/IMG_20200916_123644_161.jpg" )
+    pics = requests.get("https://github.com/LaciaMemeFrame/FTG-Modules/blob/master/mem6.jpg?raw=true" )
     pics.raw.decode_content = True
     img = Image.open(io.BytesIO(pics.content)).convert("RGB")
     lol(img, image, (160, 200), 90)
@@ -442,7 +449,7 @@ def lol(background, image, cords, size):
 
 
 def mem7(image):
-    pics = requests.get("https://raw.githubusercontent.com/ggrnaaa/ftgm0du1es/master/%D0%BA%D0%B0%D1%80%D1%82%D0%B8%D0%BD%D0%BA%D0%B8/IMG_20200916_123653_892.jpg" )
+    pics = requests.get("https://github.com/LaciaMemeFrame/FTG-Modules/blob/master/mem7.jpg?raw=true" )
     pics.raw.decode_content = True
     img = Image.open(io.BytesIO(pics.content)).convert("RGB")
     lol(img, image, (160, 200), 90)
@@ -472,20 +479,19 @@ async def check_media7(message, reply):
             Image.open(io.BytesIO(data))
             return data
         except:
-            return None          
-
+            return None 
 
 def lol(background, image, cords, size):
     overlay = Image.open(BytesIO(image))
-    overlay = overlay.resize((size * 3, size * 2))
+    overlay = overlay.resize((size * 2, size * 1))
     background.paste(overlay, cords)
 
 
 def mem8(image):
-    pics = requests.get("https://raw.githubusercontent.com/ggrnaaa/ftgm0du1es/master/%D0%BA%D0%B0%D1%80%D1%82%D0%B8%D0%BD%D0%BA%D0%B8/IMG_20200917_171328_932_1600553770145.jpg" )
+    pics = requests.get("https://github.com/LaciaMemeFrame/FTG-Modules/blob/master/mem8.jpg?raw=true" )
     pics.raw.decode_content = True
     img = Image.open(io.BytesIO(pics.content)).convert("RGB")
-    lol(img, image, (370, 558), 200)
+    lol(img, image, (370, 560), 400)
 
     out = io.BytesIO()
     out.name = "outsider.png"
@@ -512,4 +518,4 @@ async def check_media7(message, reply):
             Image.open(io.BytesIO(data))
             return data
         except:
-            return None                        
+            return None           
