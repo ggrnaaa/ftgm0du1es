@@ -213,7 +213,7 @@ def mem1(image):
     pics = requests.get("https://github.com/LaciaMemeFrame/FTG-Modules/blob/master/mem1.jpg?raw=true" )
     pics.raw.decode_content = True
     img = Image.open(io.BytesIO(pics.content)).convert("RGB")
-    lol(img, image, (1, 1), 160)
+    lol(img, image, (0, 0), 160)
 
     out = io.BytesIO()
     out.name = "outsider.png"
@@ -250,10 +250,10 @@ def lol(background, image, cords, size):
 
 
 def mem2(image):
-    pics = requests.get("https://github.com/LaciaMemeFrame/FTG-Modules/blob/master/mem2.jpg?raw=true" )
+    pics = requests.get("https://raw.githubusercontent.com/ggrnaaa/ftgm0du1es/master/%D0%BA%D0%B0%D1%80%D1%82%D0%B8%D0%BD%D0%BA%D0%B8/IMG_20200917_171215_661.jpg" )
     pics.raw.decode_content = True
     img = Image.open(io.BytesIO(pics.content)).convert("RGB")
-    lol(img, image, (1, 1), 650)
+    lol(img, image, (0, 0), 650)
 
     out = io.BytesIO()
     out.name = "outsider.png"
@@ -290,10 +290,10 @@ def lol(background, image, cords, size):
 
 
 def mem3(image):
-    pics = requests.get("https://github.com/LaciaMemeFrame/FTG-Modules/blob/master/mem3.jpg?raw=true" )
+    pics = requests.get("https://raw.githubusercontent.com/ggrnaaa/ftgm0du1es/master/%D0%BA%D0%B0%D1%80%D1%82%D0%B8%D0%BD%D0%BA%D0%B8/IMG_20200914_171454_1600180954381.jpg" )
     pics.raw.decode_content = True
     img = Image.open(io.BytesIO(pics.content)).convert("RGB")
-    lol(img, image, (1, 1), 580)
+    lol(img, image, (0, 0), 580)
 
     out = io.BytesIO()
     out.name = "outsider.png"
@@ -329,10 +329,10 @@ def lol(background, image, cords, size):
 
 
 def mem4(image):
-    pics = requests.get("https://github.com/LaciaMemeFrame/FTG-Modules/blob/master/mem4.jpg?raw=true" )
+    pics = requests.get("https://raw.githubusercontent.com/ggrnaaa/ftgm0du1es/master/%D0%BA%D0%B0%D1%80%D1%82%D0%B8%D0%BD%D0%BA%D0%B8/IMG_20200917_171209_028.jpg" )
     pics.raw.decode_content = True
     img = Image.open(io.BytesIO(pics.content)).convert("RGB")
-    lol(img, image, (1, 1), 580)
+    lol(img, image, (0, 0), 580)
 
     out = io.BytesIO()
     out.name = "outsider.png"
@@ -369,10 +369,10 @@ def lol(background, image, cords, size):
 
 
 def mem5(image):
-    pics = requests.get("https://github.com/LaciaMemeFrame/FTG-Modules/blob/master/mem5.jpg?raw=true" )
+    pics = requests.get("https://raw.githubusercontent.com/ggrnaaa/ftgm0du1es/master/%D0%BA%D0%B0%D1%80%D1%82%D0%B8%D0%BD%D0%BA%D0%B8/Screenshot_2020-09-16-11-30-32-328_com.btows.photo_1600245051259.jpg" )
     pics.raw.decode_content = True
     img = Image.open(io.BytesIO(pics.content)).convert("RGB")
-    lol(img, image, (105, 1), 440)
+    lol(img, image, (105, 0), 440)
 
     out = io.BytesIO()
     out.name = "outsider.png"
@@ -409,7 +409,7 @@ def lol(background, image, cords, size):
 
 
 def mem6(image):
-    pics = requests.get("https://github.com/LaciaMemeFrame/FTG-Modules/blob/master/mem6.jpg?raw=true" )
+    pics = requests.get("https://raw.githubusercontent.com/ggrnaaa/ftgm0du1es/master/%D0%BA%D0%B0%D1%80%D1%82%D0%B8%D0%BD%D0%BA%D0%B8/IMG_20200916_123644_161.jpg" )
     pics.raw.decode_content = True
     img = Image.open(io.BytesIO(pics.content)).convert("RGB")
     lol(img, image, (160, 200), 90)
@@ -449,7 +449,7 @@ def lol(background, image, cords, size):
 
 
 def mem7(image):
-    pics = requests.get("https://github.com/LaciaMemeFrame/FTG-Modules/blob/master/mem7.jpg?raw=true" )
+    pics = requests.get("https://raw.githubusercontent.com/ggrnaaa/ftgm0du1es/master/%D0%BA%D0%B0%D1%80%D1%82%D0%B8%D0%BD%D0%BA%D0%B8/IMG_20200916_123653_892.jpg" )
     pics.raw.decode_content = True
     img = Image.open(io.BytesIO(pics.content)).convert("RGB")
     lol(img, image, (160, 200), 90)
@@ -483,7 +483,7 @@ async def check_media7(message, reply):
 
 def lol(background, image, cords, size):
     overlay = Image.open(BytesIO(image))
-    overlay = overlay.resize((size * 2, size * 1))
+    overlay = overlay.resize((size * 3, size * 2))
     background.paste(overlay, cords)
 
 
@@ -491,7 +491,7 @@ def mem8(image):
     pics = requests.get("https://raw.githubusercontent.com/ggrnaaa/ftgm0du1es/master/%D0%BA%D0%B0%D1%80%D1%82%D0%B8%D0%BD%D0%BA%D0%B8/IMG_20200917_171328_932_1600553770145.jpg" )
     pics.raw.decode_content = True
     img = Image.open(io.BytesIO(pics.content)).convert("RGB")
-    lol(img, image, (370, 560), 400)
+    lol(img, image, (370, 550), 200)
 
     out = io.BytesIO()
     out.name = "outsider.png"
