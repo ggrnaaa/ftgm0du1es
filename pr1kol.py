@@ -31,7 +31,6 @@ class PrikolMod(loader.Module):
 
     async def akcmd(self, message):
         """.ak и реплай на картинку. акушерка сбежала помогите найти"""
-        await message.delete()
         reply = await message.get_reply_message()
         if not reply:
             await message.edit("реплай на картиночку, пожалуйста")
@@ -46,7 +45,6 @@ class PrikolMod(loader.Module):
 
     async def ebcmd(self, message):
         """.eb и реплай на картинку.  муж ебет меня чето там"""
-        await message.delete()
         reply = await message.get_reply_message()
         if not reply:
             await message.edit("реплай на картиночку, пожалуйста")
@@ -61,7 +59,6 @@ class PrikolMod(loader.Module):
 
     async def intcmd(self, message):
         """.int и реплай на картинку. интересноо я один блаблаблабда"""
-        await message.delete()
         reply = await message.get_reply_message()
         if not reply:
             await message.edit("реплай на картиночку, пожалуйста")
@@ -76,7 +73,6 @@ class PrikolMod(loader.Module):
 
     async def smcmd(self, message):
         """.sm и реплай на картинку. смешные картинки в понедельник"""
-        await message.delete()
         reply = await message.get_reply_message()
         if not reply:
             await message.edit("реплай на картиночку, пожалуйста")
@@ -91,7 +87,6 @@ class PrikolMod(loader.Module):
             
     async def moskcmd(self, message):
         """.mosk и реплай на картинку. виноваты москали"""
-        await message.delete()
         reply = await message.get_reply_message()
         if not reply:
             await message.edit("реплай на картиночку, пожалуйста")
@@ -106,7 +101,6 @@ class PrikolMod(loader.Module):
 
     async def aktcmd(self, message):
         """.akt и реплай на картинку. убийца актер"""
-        await message.delete()
         reply = await message.get_reply_message()
         if not reply:
             await message.edit("реплай на картиночку, пожалуйста")
@@ -122,7 +116,6 @@ class PrikolMod(loader.Module):
 
     async def zpmcmd(self, message):
         """.zpm и реплай на картинку. запомните твари"""
-        await message.delete()
         reply = await message.get_reply_message()
         if not reply:
             await message.edit("реплай на картиночку, пожалуйста")
@@ -137,7 +130,6 @@ class PrikolMod(loader.Module):
             
     async def zbtcmd(self, message):
         """.zbt и реплай на картинку.  забудьте твари"""
-        await message.delete()
         reply = await message.get_reply_message()
         if not reply:
             await message.edit("реплай на картиночку, пожалуйста")
@@ -152,7 +144,6 @@ class PrikolMod(loader.Module):
             
     async def drcmd(self, message):
         """.dr и реплай на картинку. мне и одного друга достаточно, если он"""
-        await message.delete()
         reply = await message.get_reply_message()
         if not reply:
             await message.edit("реплай на картиночку, пожалуйста")
