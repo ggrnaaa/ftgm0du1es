@@ -31,6 +31,7 @@ class PrikolMod(loader.Module):
 
     async def akcmd(self, message):
         """.ak и реплай на картинку. акушерка сбежала помогите найти"""
+        await message.delete()
         reply = await message.get_reply_message()
         if not reply:
             await message.edit("реплай на картиночку, пожалуйста")
