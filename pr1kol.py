@@ -176,7 +176,21 @@ class PrikolMod(loader.Module):
                 return
             what = mem9(pic)
             await message.client.send_file(message.to_id, what)
-                        
+ 
+    async def pecmd(self, message):
+        """.pe и реплай на картинку. комплимент"""
+        await message.delete()
+        reply = await message.get_reply_message()
+        if not reply:
+            await message.edit("реплай на картиночку, пожалуйста")
+        else:
+            pic = await check_media11(message, reply)
+            if not pic:
+                await utils.answer(message, 'это не картиночка')
+                return
+            what = mem11(pic)
+            await message.client.send_file(message.to_id, what)
+                       
 def lol(background, image, cords, size):
     overlay = Image.open(BytesIO(image))
     overlay = overlay.resize((size * 2, size * 1))
@@ -573,4 +587,43 @@ async def check_media9(message, reply):
             Image.open(io.BytesIO(data))
             return data
         except:
-            return None            
+            return None           
+
+def lol11(background, image, cords, size):
+    overlay = Image.open(BytesIO(image))
+    overlay = overlay.resize((size * 2, size * 1))
+    background.paste(overlay, cords)
+
+
+def mem11(image):
+    pics = requests.get("https://raw.githubusercontent.com/ggrnaaa/ftgm0du1es/master/%D0%BA%D0%B0%D1%80%D1%82%D0%B8%D0%BD%D0%BA%D0%B82/IMG_20200909_211148_531_1599676109708_1600536282728_160060345616_1601024183233.jpg" )
+    pics.raw.decode_content = True
+    img = Image.open(io.BytesIO(pics.content)).convert("RGB")
+    lol(img, image, (0, 0), 160)
+
+    out = io.BytesIO()
+    out.name = "outsider.png"
+    img.save(out, format="png")
+    return out.getvalue()
+
+async def check_media11(message, reply):
+    if reply and reply.media:
+        if reply.photo:
+            data = reply.photo
+        elif reply.document:
+            if reply.gif or reply.video or reply.audio or reply.voice:
+                return None
+            data = reply.media.document
+        else:
+            return None
+    else:
+        return None
+    if not data or data is None:
+        return None
+    else:
+        data = await message.client.download_file(data, bytes)
+        try:
+            Image.open(io.BytesIO(data))
+            return data
+        except:
+            return None 
