@@ -136,7 +136,7 @@ class SsMod(loader.Module):
 		draw.multiline_text((35, 35),t,(225,225,225),font=font, align='left')
 		imtext.thumbnail((750, 540))
 		w, h = 750, 540
-		img.paste(imtext, (460,130), imtext)
+		img.paste(imtext, (460,150), imtext)
 		out = io.BytesIO()
 		out.name = "out.jpg"
 		img.save(out)
